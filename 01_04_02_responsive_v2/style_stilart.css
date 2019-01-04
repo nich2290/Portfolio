@@ -1,0 +1,599 @@
+/****************************  Menu  ****************************/
+
+
+/* unvisited link */
+header nav a:link,
+header nav a:active,
+header nav a:visited {
+    color: red;
+}
+
+
+/* mouse over link */
+header nav a:hover {
+    color: black;
+}
+
+
+
+header {
+    position: fixed;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 1.5rem;
+
+}
+
+header nav a {
+    margin: 0 0 1rem 0;
+    font-family: 'obelixproregular';
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    text-shadow: 1px 1px 0px #ffeb00;
+}
+
+@media only screen and (min-width:795px) {
+
+    header nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 1rem 0 1rem;
+    }
+
+    header nav a {
+        border-right: 0.25rem solid red;
+        padding: 0 0.8rem;
+    }
+
+    header nav a:last-child {
+        border-right: none;
+    }
+}
+
+/****************************  Menu slut ****************************/
+
+@font-face {
+    font-family: 'obelixproregular';
+    src: url('fonts/obelixpro-cyr-webfont.woff2') format('woff2'),
+        url('fonts/obelixpro-cyr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/***********GENERELT***********/
+* {
+    box-sizing: border-box;
+
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+
+}
+
+#mood {
+    margin-left: 18vw
+}
+h1 {
+    font-family: 'obelixproregular';
+    color: red;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+    text-shadow: 2px 1px 2px black;
+}
+
+h2 {
+    font-family: 'pridi', serif;
+    font-size: 1.4rem
+}
+
+.btekst {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0rem;
+    line-height: 1.5;
+
+}
+
+.quote {
+    color: red;
+}
+
+
+body {
+    background-color: lightgray;
+    margin: 0;
+}
+
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6rem;
+    color: #262224;
+
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#splash {
+    max-width: none;
+}
+
+/***********GENERELT SLUT***********/
+
+
+/*HER STARTER OM*/
+
+
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+}
+
+#om .column {
+    flex-grow: 1;
+    flex-basis: 550px;
+    border: 2px solid black;
+    background-color: darkgrey;
+}
+
+#om img {
+    padding-top: 150px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #om img {
+        padding-top: 0px;
+        max-width: 75%;
+        display: block;
+
+
+    }
+}
+
+/**************************HER SLUTTER OM****************************/
+/*background-color:#6f616e*/
+
+/**********************HER STARTER EKSEMPLER*************************/
+#eksempler {}
+
+#eksempler .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+
+
+}
+
+#eksempler .column {
+    flex-grow: 1;
+    flex-basis: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: darkgrey;
+
+    border: 2px solid black;
+
+}
+
+
+
+/***********************HER SLUTTER EKSEMPLER*********************/
+
+/**********************HER STARTER TYPOGRAFI*************************/
+
+#typografi .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+
+
+}
+
+#typografi .column_wide {
+    flex-grow: 3;
+    flex-basis: 700px;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+}
+
+#typografi .column_narrow {
+    flex-grow: 1;
+    flex-basis: 250px;
+    display: flex;
+    border: 2px solid black;
+    background-color: darkgrey;
+    flex-direction: column;
+
+
+}
+
+#typografi .top {
+
+    display: flex;
+    border: 2px solid black;
+
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    background-color: darkgrey;
+
+}
+
+#typografi .bottom {
+
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    background-color: darkgrey;
+
+
+
+}
+
+#typografi .top .image {
+    flex-grow: 1;
+    flex-basis: 350px;
+
+
+}
+
+
+#typografi .top .txt {
+    flex-grow: 1;
+    flex-basis: 350px;
+}
+
+#typografi .bottom .txt {
+    flex-grow: 1;
+    flex-basis: 350px;
+}
+
+#typografi .bottom .image {
+    flex-grow: 1;
+    flex-basis: 350px;
+
+}
+
+
+
+
+
+
+
+
+
+/******************************HER SLUTTER TYPOGRAFI*******************/
+
+/******************************HER STARTER FARVER*********************/
+
+#komposition_farver .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+}
+
+#komposition_farver .column_wide {
+    flex-grow: 3;
+    flex-basis: 650px;
+    display: flex;
+    border: 2px solid black;
+    flex-wrap: nowrap;
+    background-color: darkgrey;
+
+
+}
+
+#komposition_farver .column_narrow {
+    flex-grow: 1;
+    flex-basis: 450px;
+    border: 2px solid black;
+    background-color: darkgrey;
+
+
+}
+
+#komposition_farver .colors {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+
+}
+
+#komposition_farver .content {
+    flex-grow: 3;
+    flex-basis: 400px;
+}
+
+#komposition_farver .colors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+/******************************HER SLUTTER FARVER*********************/
+
+/******************************HER STARTER LINKS*********************/
+#links {
+    padding: 1rem;
+}
+
+#links .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 1rem;
+    background-color: darkgrey;
+}
+
+
+
+/******************************HER SLUTTER LINKS*********************/
+
+/******************************HER STARTER EKSTRA*********************/
+
+#ekstra .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1.0rem;
+
+}
+
+#ekstra .column_narrow {
+    flex-grow: 1;
+    flex-basis: 600px;
+    border: 2px solid black;
+    background-color: darkgrey;
+
+
+}
+
+#ekstra .column_narrow img {
+    max-width: 60%;
+}
+
+#ekstra .column_wide {
+    flex-grow: 3;
+    flex-basis: 400px;
+    border: 2px solid black;
+    background-color: darkgrey;
+}
+
+#moodboard .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#moodboard .content {
+    flex-grow: 1;
+    flex-basis: 600px;
+}
+
+/****************** styletile sektion ******************/
+
+#styletile .forklaring {
+    font-size: 0.7rem;
+
+}
+
+#styletile .forklaring strong {
+    font-weight: 700;
+}
+
+
+
+#styletile h2,
+#styletile h3 {
+    font-family: 'Pridi', serif;
+    color: black;
+}
+
+@font-face {
+    font-family: 'syouwa_retro_popregular';
+    src: url('fonts/gomarice_syouwa_retro_pop-webfont.woff2') format('woff2'),
+        url('fonts/gomarice_syouwa_retro_pop-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#styletile h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'obelixproregular';
+    color: red;
+
+}
+
+.overskrift h1 {}
+
+
+
+
+#styletile h2 {
+    font-size: 1.4rem;
+}
+
+#styletile .h3 {
+    font-size: 1.2rem;
+}
+
+#styletile p {
+    font-family: 'Roboto', sans-serif;
+    color: #262224;
+    line-height: 1.6;
+}
+
+#styletile .manchet {
+    font-family: 'Roboto', sans-serif;
+    color: #262224;
+
+
+}
+
+#styletile figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6rem;
+    color: #262224;
+
+}
+
+#styletile a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+
+
+
+}
+
+#styletile .menu a:hover {
+    color: black;
+}
+
+/* unvisited link */
+#styletile .menu a:link {
+    color: #ff0707;
+    font-family: 'obelixproregular';
+}
+
+#styletile .menu a:hover {
+    color: black;
+}
+
+/* visited link */
+#styletile a:visited {
+    color: #ff0707;
+}
+
+#links a:visited {
+    color: black;
+}
+
+#links a:hover {
+    color: red;
+}
+
+#links a:active {
+    color: black;
+}
+
+.links a:visited {
+    color: black;
+}
+
+.links a:hover {
+    color: red;
+}
+
+.links href:active {
+    color: black;
+}
+
+
+/* mouse over link */
+#styletile a:hover {
+    color: red;
+}
+
+/* selected link */
+#styletile a:active {
+    color: black;
+}
+
+#styletile .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#styletile .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#styletile .column {
+    flex-grow: 1;
+    flex-basis: 600px;
+}
+
+/*********** COLORS   *********/
+
+#styletile .colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.colors div {
+    width: 100px;
+    height: 100px;
+    border: 1px black solid;
+}
+
+.color1 {
+    background-color: #ff0033;
+}
+
+.color2 {
+    background-color: #cc0066;
+}
+
+.color3 {
+    background-color: #0099ff;
+}
+
+.color4 {
+    background-color: #99cc00;
+}
+
+.color5 {
+    background-color: #ffff00;
+}
+
+/***********SPLASH*************/
+.splash {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ikoner {
+    display: flex;
+}
+
+@media only screen and (min-width: 620px) {
+    #eksempler .column {
+        flex-basis: 150px;
+        flex-grow: 1;
+    }
+}

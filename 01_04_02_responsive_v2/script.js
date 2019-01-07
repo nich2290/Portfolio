@@ -17,7 +17,7 @@ function toggleMenu() {
         document.querySelector("#menuknap").textContent = "☰";
         //menuen er nu skjult - ændr menuknap til lll
     } else {
-        document.querySelector("#menuknap").textContent = "X";
+        document.querySelector("#menuknap").textContent = "✖";
     }
 
 }

@@ -15,12 +15,18 @@ h1{
 h2{
     font-family: 'Roboto', sans-serif;
 }
+h3{
+    font-family: 'roboto', sans-serif;
+    color: white;
+    padding-bottom: 15px;
+}
 p{
     font-family: 'Roboto', sans-serif;
 }
 a{
     font-family: 'Roboto', sans-serif;
-    text-decoration-line: none;
+    text-decoration: none;
+
 }
 li{
     font-family: 'Roboto', sans-serif;
@@ -28,7 +34,41 @@ li{
 .hidden {
     display:none;
 }
+.fa {
+  padding: 20px;
+  float:right;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 
+
+
+}
+#social {
+    margin-right: 90px;
+}
+.fa:hover {
+    transform: scale(1.1)
+
+}
+.fa-facebook:hover{
+    background-color:white;
+    color:#3B5998;
+}
+.fa-instagram:hover{
+    background-color:white;
+    color:#125688;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 /*********GENERAL END***********/
 
 
@@ -70,7 +110,15 @@ header nav {
 
 
 }
+#icon {
+    width:20%;
+    float:left;
+    margin-left: 2vw;
+    position:Absolute;
+    top: -1vw;
 
+
+}
 header nav a {
     margin: 0 0 1rem 0;
     font-family: 'Roboto', sans-serif;
@@ -113,6 +161,15 @@ header nav a {
     }
     #menuknap{
     display:none;
+}
+    #icon {
+    width:6%;
+    float:left;
+    margin-left: 0vw;
+    position:fixed;
+    top: 0.5;
+
+
 }
 
 }
@@ -206,6 +263,7 @@ header nav a {
 
 #portfolio {
     background-color: rgb(75, 69, 69);
+
 }
 
 .container {
@@ -261,13 +319,20 @@ header nav a {
     flex-wrap: wrap;
     padding-top: 3vw;
 }
+#copyright{
+    flex-basis: 200px;
+    flex-grow: 1;
+}
 .copyright {
     color: white;
     margin-left: 5vw;
     line-height: 1.5;
 
 }
-
+#social {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
 
 
 /***********CV***********/
@@ -277,7 +342,7 @@ header nav a {
 #cvwrapper {
     display:flex;
     flex-wrap:wrap;
-    padding-top: 30vw;
+    padding-top: 10vw;
     margin: 0 5vw;
     flex-direction: column;
 
@@ -341,6 +406,7 @@ li{
     margin-left: 5vw;
     margin-right: 5vw;
 }
+/*
  #projekt1 {
         display:inline-block;
         width: 30vw;
@@ -395,9 +461,53 @@ li{
     color: white;
     margin-bottom: 2vw;
 }
+/*
 #tema1 a {
     color:white;
     text-decoration: none;
+}
+*/
+.button {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+    border-color: black;
+
+  color: black;
+  border: 2px solid black;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+    border: 2px solid white;
+}
+.button2 {
+  background-color: white;
+    border-color: black;
+
+  color: black;
+  border: 2px solid black;
+    max-width: 34vw;
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+    border: 2px solid white;
 }
 /*********MEDIA QUERYS*******/
 
@@ -513,6 +623,19 @@ li{
     .tema1overskrift {
         padding-top: 8vw;
     }
+    .img{
+
+    }
+    .img2{
+
+    }
+    .column{
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    #projektwrapper{
+        margin-left: 2vw;
+    }
     #tema1wrapper {
     display:flex;
     flex-wrap:wrap;
@@ -528,7 +651,7 @@ li{
     flex-grow:1;
 }
     .moodboard{
-        width: 60%;
+        width: 90%;
     }
     #tema1 {
         margin-left: 5vw;
@@ -570,7 +693,11 @@ li{
         height: 2vw;
 
 
+
     }
+
+
+
     #tema1 h3{
         padding-top: 2vw;
     }
@@ -578,4 +705,49 @@ li{
     margin-left: 5vw;
     margin-right: 5vw;
 }
+    .skitse{
+        width:50%
+    }
+}
+.img5{
+    width:100%
+}
+/********SOCIAL MEDIA*******/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
